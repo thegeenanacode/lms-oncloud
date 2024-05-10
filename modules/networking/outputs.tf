@@ -1,6 +1,9 @@
 # In modules/networking/outputs.tf
 
-output "subnet_id" {
-  value = aws_subnet.lms_subnet.id
-  description = "The ID of the subnet"
+output "public_subnet_id" {
+  value = aws_subnet.lms_public_subnet.id
+}
+
+output "private_subnet_id" {
+  value = aws_subnet.lms_private_subnet.id
 }

@@ -22,5 +22,5 @@ module "networking" {
 
 module "compute" {
   source    = "./modules/compute"
-  subnet_id = module.networking.subnet_id  # Passing subnet ID as a variable
+  subnet_id = module.networking.public_subnet_id   # Passing subnet ID as a variable
 }
